@@ -1,0 +1,175 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fdfdfd;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #add8e6, #ffb6c1); /* light blue to light pink */
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+header h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fcb900;
+}
+
+/* Section styling */
+section {
+  padding: 100px 40px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fff;
+}
+
+section:nth-child(even) {
+  background: #f9f9f9;
+}
+
+h1, h2 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+p, ul {
+  font-size: 18px;
+  max-width: 800px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Contact section */
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #fcb900;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.about-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+#videos {
+  padding: 100px 40px;
+  background: #f5f9ff;
+  text-align: center;
+}
+
+#videos h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+}
