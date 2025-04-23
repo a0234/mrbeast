@@ -17,7 +17,7 @@ body {
 header {
   background: linear-gradient(to right, #add8e6, #ffb6c1); /* light blue to light pink */
   color: white;
-  padding: 15px 40px;
+  padding: 2px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +27,11 @@ header {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+header img.logo {
+  height: 40px; /* Resize logo */
+  width: auto;
+  margin-right: 15px;
+}
 
 header h2 {
   font-size: 28px;
